@@ -1,0 +1,118 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            margin: 150px 0;
+        }
+        
+        .content-container {
+            width: 800px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 0px 50px #fbc1ff;
+            padding: 40px;
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        h1 {
+            color: #ffa5fd;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        p {
+            color: #ff9dfc;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .hr {
+			height: 5px;
+			background: linear-gradient(
+				90deg, 
+				transparent 10%, 
+				#faadff 50%, 
+				#faadff 50%, 
+				transparent 90%
+			);
+			margin: 20px 0;
+		}
+
+        .txt {
+            font-family: calibri;
+            color: #000000
+        }
+
+        .title {
+            font-family: calibri;
+            text-shadow: 0 0 20px #faadff;
+        }
+
+        a {
+            color:#f9acff;
+            font-family: calibri;
+        }
+
+        a:visited {
+            color:#aafbff;
+            font-family: calibri;
+        }
+
+        a:hover {
+            color:#d1a2ff;
+            font-family: calibri;
+            transition: color 0.3s
+        }
+
+        html {
+            scrollbar-color: #6200ff #000000;
+            scrollbar-width: thin;
+        }
+
+        .left-menu {
+            width: 200px;
+            background: #1a0042;
+            box-shadow: 15 0px 30px #6200ff9a;
+            padding: 0px;
+            border-radius: 8px;
+            color: white;
+            float: left;
+            margin-right: 20px;
+            margin-top: 20px;
+            text-align:center;
+        }
+    
+        .left-menu a {
+            display: block;
+            color: #e0e0e0;
+            text-decoration: none;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+    
+        .left-menu a:hover {
+            background: #6200ff;
+            transition: 0.3s;
+        }
+
+        bottom-menu {
+            position:fixed;
+            bottom:0;
+            width:100%;
+            background:#362844;
+            padding:10px;
+            text-align:center;
+        }
