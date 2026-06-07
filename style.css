@@ -1,41 +1,58 @@
-* {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         
         body {
-            font-family: Arial, sans-serif;
             min-height: 100vh;
-            background-color: #ffffff;
+            background-color: #2c2d32;
             display: flex;
             justify-content: center;
             align-items: flex-start;
             padding: 20px;
-            margin: 150px 0;
+            margin: 400px 0;
+            background-image: url('pics/bg.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            image-rendering: crisp-edges;
+            image-rendering: pixelated;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
         }
         
         .content-container {
             width: 800px;
-            background-color: #ffffff;
+            background-color: #4f505a;
             border-radius: 15px;
-            box-shadow: 0 0px 50px #fbc1ff;
             padding: 40px;
             margin-top: 20px;
             position: relative;
             z-index: 1;
         }
-        
-        h1 {
-            color: #ffa5fd;
-            margin-bottom: 20px;
-            text-align: center;
+
+        p {
+            font-family: Calibri;
+            color: #ffffff;
+            font-size: 18px;
         }
         
-        p {
-            color: #ff9dfc;
-            line-height: 1.6;
-            margin-bottom: 15px;
+        h1 {
+            color: #ffffff;
+            font-family: calibri;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 56px;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-family: calibri;
+            margin: 20px;
+            text-align: center;
+            font-size: 36px;
         }
 
         .hr {
@@ -43,48 +60,54 @@
 			background: linear-gradient(
 				90deg, 
 				transparent 10%, 
-				#faadff 50%, 
-				#faadff 50%, 
+				#7d7e97 50%, 
+				#7d7e97 50%, 
 				transparent 90%
 			);
-			margin: 20px 0;
+			margin: 25px 0;
 		}
 
         .txt {
             font-family: calibri;
-            color: #000000
+            color: #ffffff
         }
 
         .title {
             font-family: calibri;
-            text-shadow: 0 0 20px #faadff;
+            text-shadow: 0 0 20px #a0a2fc;
         }
 
         a {
-            color:#f9acff;
+            color:#9d9dbd;
             font-family: calibri;
+            text-decoration: none;
         }
 
         a:visited {
-            color:#aafbff;
+            color:#8f8f95;
             font-family: calibri;
         }
 
         a:hover {
-            color:#d1a2ff;
+            color:#ffffff;
             font-family: calibri;
             transition: color 0.3s
         }
 
         html {
-            scrollbar-color: #6200ff #000000;
+            scrollbar-color: #737183 #4d4c53;
             scrollbar-width: thin;
+        }
+
+        ::selection {
+            background-color: #81819b;
+            color:#ffffff;
         }
 
         .left-menu {
             width: 200px;
-            background: #1a0042;
-            box-shadow: 15 0px 30px #6200ff9a;
+            background: #6d6b9c;
+            box-shadow: 15 0px 30px #887dff;
             padding: 0px;
             border-radius: 8px;
             color: white;
@@ -104,7 +127,7 @@
         }
     
         .left-menu a:hover {
-            background: #6200ff;
+            background: #887dff;
             transition: 0.3s;
         }
 
@@ -115,4 +138,127 @@
             background:#362844;
             padding:10px;
             text-align:center;
+        }
+
+        .news-scroll {
+            width: 700px;
+            height: 250px;
+            background: #454553;
+            padding: 16px;
+            overflow-y: auto;
+            border-radius: 20px;
+        }
+
+        .news-item {
+            background: #58586a;
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 20px;
+            font-family: calibri;
+        }
+
+        .pro-news-item {
+            background: #98eeff;
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 20px;
+        }
+
+        .news-date {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .news-text {
+            color: #ffffff;
+            font-size: 16px;
+            line-height: 1.5;
+            font-family: calibri;
+        }
+
+        .banner-top {
+            position: absolute;
+            top: 50px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .banner-top img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .top-menu {
+            text-align: center;
+            padding: 15px 0 10px 0;
+        }
+
+        .top-menu a {
+            display: inline-block;
+            text-decoration: none;
+            color: #aaa;
+            font-size: 32px;
+            padding: 5px 15px;
+            margin: 0 5px;
+        }
+
+        .top-menu a:hover {
+            color: #6f70b7;
+            text-decoration: none;
+        }
+
+        .custom-block {
+            background: #58586a;
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+            margin: 25px;
+        }
+
+        .custom-block p {
+            margin: 0;
+            color: #ffffff;
+            font-family: calibri;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        char-pic {
+            image-rendering: pixelated;
+            margin: 50px;
+        }
+
+        .quote {
+            font-style: italic;
+            font-family: calibri;
+            border-left: 3px solid #ffffff;
+            padding-left: 15px;
+            margin: 20px 0;
+            color: #ffffff;
+            font-size: 20px;
+        }
+        .author {
+            font-style: normal;
+            font-family: calibri;
+            margin-top: 5px;
+            color: #948fc1;
+            font-size: 14px;
+        }
+
+        .toy {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 150px;
         }
